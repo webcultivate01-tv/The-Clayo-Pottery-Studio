@@ -807,80 +807,196 @@
     </div>
 
     <!-- PAGE HERO -->
-    <section
-      class="relative overflow-hidden"
-      style="min-height: 360px; display: flex; align-items: center"
+<section
+  class="relative overflow-hidden"
+  style="
+    min-height: 420px;
+    display: flex;
+    align-items: center;
+    background:
+      linear-gradient(
+        135deg,
+        rgba(28, 18, 12, 0.60) 0%,
+        rgba(52, 32, 20, 0.52) 45%,
+        rgba(196, 103, 58, 0.18) 100%
+      ),
+      url('https://lh3.googleusercontent.com/p/AF1QipPMKTbob9-fvJ4X8FvkRdFVR4nWsmtCS0S4WonR=s1360-w1360-h1020-rw');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  "
+>
+  <!-- Soft Blur Overlay -->
+  <div
+    style="
+      position:absolute;
+      inset:0;
+      z-index:0;
+      backdrop-filter: blur(2px);
+      background:
+        radial-gradient(
+          circle at top right,
+          rgba(255,255,255,0.06),
+          transparent 40%
+        );
+    "
+  ></div>
+
+  <!-- Decorative Glow -->
+  <div
+    style="
+      position:absolute;
+      width:420px;
+      height:420px;
+      border-radius:999px;
+      background:rgba(232,192,128,0.08);
+      filter:blur(90px);
+      top:-120px;
+      right:-100px;
+      z-index:0;
+    "
+  ></div>
+
+  <div
+    style="
+      position:absolute;
+      width:320px;
+      height:320px;
+      border-radius:999px;
+      background:rgba(255,255,255,0.04);
+      filter:blur(80px);
+      bottom:-120px;
+      left:-80px;
+      z-index:0;
+    "
+  ></div>
+
+  <!-- Content -->
+  <div
+    class="max-w-3xl mx-auto px-6 text-center relative z-10 reveal"
+    style="
+      padding-top: 110px;
+      padding-bottom: 80px;
+      width: 100%;
+    "
+  >
+    <!-- Tag -->
+    <span
+      style="
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 0.74rem;
+        font-weight: 600;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: #f3ddbb;
+        background: rgba(255,255,255,0.08);
+        border: 1px solid rgba(255,255,255,0.14);
+        backdrop-filter: blur(12px);
+        padding: 8px 18px;
+        border-radius: 999px;
+        margin-bottom: 18px;
+      "
     >
-      <div style="position: absolute; inset: 0; z-index: 0">
-        <img
-          src="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=1400&q=85"
-          alt="Pottery studio contact"
-          style="
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
-            filter: blur(3px) brightness(0.38);
-            transform: scale(1.05);
-          "
-        />
-      </div>
-      <div
+      <i class="fa-solid fa-circle-dot"></i>
+      Get in Touch
+    </span>
+
+    <!-- Heading -->
+    <h1
+      class="font-heading font-bold leading-tight hero-title mt-3 mb-5"
+      style="
+        color: #fff;
+        font-size: clamp(2.6rem, 7vw, 5.5rem);
+        line-height: 1.05;
+        letter-spacing: -0.03em;
+      "
+    >
+      Contact
+      <span
+        class="font-heading"
         style="
-          position: absolute;
-          inset: 0;
-          z-index: 1;
-          background: linear-gradient(
-            135deg,
-            rgba(107, 61, 42, 0.78) 0%,
-            rgba(44, 33, 24, 0.68) 50%,
-            rgba(196, 103, 58, 0.28) 100%
-          );
+          color: #e8c080;
+          text-shadow:
+            0 0 18px rgba(232,192,128,0.16);
         "
-      ></div>
-      <div
-        class="max-w-3xl mx-auto px-6 text-center relative z-10 reveal"
-        style="padding-top: 100px; padding-bottom: 60px; width: 100%"
       >
-        <span
-          style="
-            display: inline-block;
-            font-size: 0.75rem;
-            font-weight: 600;
-            letter-spacing: 0.14em;
-            text-transform: uppercase;
-            color: #e8d5b7;
-            background: rgba(196, 103, 58, 0.25);
-            border: 1px solid rgba(196, 103, 58, 0.4);
-            padding: 6px 18px;
-            border-radius: 100px;
-            margin-bottom: 14px;
-          "
-        >
-          <i class="fa-solid fa-circle-dot mr-1"></i> Get in Touch
-        </span>
-        <h1
-          class="font-heading text-5xl lg:text-6xl font-bold leading-tight hero-title mt-3 mb-5"
-          style="color: #fff"
-        >
-          Contact
-          <span class="font-heading" style="color: #e8a87c">the Studio</span>
-        </h1>
-        <p
-          style="
-            color: rgba(255, 255, 255, 0.85);
-            font-size: 1.05rem;
-            line-height: 1.75;
-            max-width: 560px;
-            margin: 0 auto;
-          "
-        >
-          Ready to get your hands on clay? Reach out to reserve a workshop seat,
-          ask about custom ceramic pieces, or simply come visit our studio in
-          Amravati.
-        </p>
-      </div>
-    </section>
+        the Studio
+      </span>
+    </h1>
+
+    <!-- Description -->
+    <p
+      style="
+        color: rgba(255,255,255,0.88);
+        font-size: 1.03rem;
+        line-height: 1.85;
+        max-width: 620px;
+        margin: 0 auto 2.2rem;
+      "
+    >
+      Visit The Clayo Pottery Studio in Amravati to book immersive pottery
+      workshops, handcrafted ceramic experiences, and creative clay sessions
+      guided by expert artists.
+    </p>
+
+    <!-- Buttons -->
+    <div class="flex flex-wrap gap-4 justify-center">
+      <!-- Primary -->
+      <a
+        href="#bookingForm"
+        class="btn-primary"
+        style="
+          box-shadow:
+            0 12px 40px rgba(0,0,0,0.22);
+        "
+      >
+        <i class="fa-solid fa-calendar-check mr-2"></i>
+        Book a Workshop
+      </a>
+
+      <!-- Secondary -->
+      <a
+        href="#contact-info"
+        style="
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          border: 1.5px solid rgba(255,255,255,0.28);
+          background: rgba(255,255,255,0.06);
+          backdrop-filter: blur(10px);
+          color: #fff;
+          padding: 12px 30px;
+          border-radius: 100px;
+          font-size: 0.92rem;
+          font-weight: 500;
+          transition: all 0.3s ease;
+          text-decoration: none;
+        "
+        onmouseover="
+          this.style.background='rgba(255,255,255,0.14)';
+          this.style.transform='translateY(-2px)';
+        "
+        onmouseout="
+          this.style.background='rgba(255,255,255,0.06)';
+          this.style.transform='translateY(0px)';
+        "
+      >
+        Visit Our Studio
+      </a>
+    </div>
+  </div>
+
+  <!-- Mobile Optimization -->
+  <style>
+    @media (max-width: 768px) {
+      section {
+        background-attachment: scroll !important;
+      }
+    }
+  </style>
+</section>
 
     <!-- QUICK CONTACT CARDS -->
     <section class="py-10 bg-white">
