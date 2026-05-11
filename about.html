@@ -732,105 +732,409 @@
     </div>
 
     <!-- HERO -->
-    <section
-      class="relative pt-16 pb-20 overflow-hidden"
-      style="
-        background: linear-gradient(
-          135deg,
-          #faf7f2 0%,
-          #f5ede6 60%,
-          #ede0d4 100%
-        );
-      "
-    >
-      <div
-        class="hero-blob"
-        style="
-          width: 420px;
-          height: 420px;
-          background: rgba(184, 147, 90, 0.12);
-          top: -120px;
-          right: -80px;
-        "
-      ></div>
-      <div
-        class="hero-blob"
-        style="
-          width: 300px;
-          height: 300px;
-          background: rgba(193, 101, 74, 0.08);
-          bottom: -60px;
-          left: -60px;
-        "
-      ></div>
-      <div
-        class="max-w-6xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center relative z-10"
+ <section
+  class="relative pt-16 pb-20 overflow-hidden"
+  style="
+    background: linear-gradient(
+      135deg,
+      #faf7f2 0%,
+      #f5ede6 60%,
+      #ede0d4 100%
+    );
+  "
+>
+  <!-- Background Blobs -->
+  <div
+    class="hero-blob"
+    style="
+      width: 420px;
+      height: 420px;
+      background: rgba(184, 147, 90, 0.12);
+      top: -120px;
+      right: -80px;
+    "
+  ></div>
+
+  <div
+    class="hero-blob"
+    style="
+      width: 300px;
+      height: 300px;
+      background: rgba(193, 101, 74, 0.08);
+      bottom: -60px;
+      left: -60px;
+    "
+  ></div>
+
+  <div
+    class="max-w-6xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center relative z-10"
+  >
+    <!-- LEFT CONTENT -->
+    <div class="reveal">
+      <span class="section-tag">
+        <i class="fa-solid fa-circle-dot"></i>
+        Our Story
+      </span>
+
+      <h1
+        class="hero-title font-heading font-bold text-charcoal leading-tight mt-3 mb-6"
+        style="font-size: 3.5rem"
       >
-        <div class="reveal">
-          <span class="section-tag"
-            ><i class="fa-solid fa-circle-dot"></i> Our Story</span
+        About
+        <span class="text-gold font-heading">Clayo</span>
+        <br />
+        Pottery Studio
+      </h1>
+
+      <p class="text-muted text-lg leading-relaxed mb-4">
+        A sanctuary of clay and creativity, dedicated to awakening the artist
+        within every person. We believe handmade ceramics connect us to
+        something ancient, tactile and deeply human.
+      </p>
+
+      <p class="text-muted leading-relaxed mb-8">
+        Founded in 2017 by Priya Deshmukh, Clayo has grown into Amravati's most
+        beloved pottery studio — nurturing over 3,500 students from first-time
+        beginners to advanced ceramic artists.
+      </p>
+
+      <div class="flex gap-4 flex-wrap">
+        <a href="contact.html" class="btn-primary">
+          <i class="fa-regular fa-calendar-check"></i>
+          Book a Workshop
+        </a>
+
+        <a href="services.html" class="btn-outline">
+          Our Workshops
+        </a>
+      </div>
+    </div>
+
+    <!-- RIGHT IMAGE SLIDER -->
+    <div
+      class="reveal-right relative"
+      style="transition-delay: 0.15s"
+    >
+      <!-- Slider Container -->
+      <div
+        class="relative overflow-hidden shadow-2xl"
+        style="
+          height: 480px;
+          border-radius: 32px;
+          transform: rotate(-2deg);
+          box-shadow:
+            0 40px 100px rgba(0,0,0,0.12),
+            0 10px 40px rgba(184,145,42,0.08);
+        "
+      >
+        <!-- Grain Texture -->
+        <div
+          style="
+            position:absolute;
+            inset:0;
+            opacity:0.04;
+            z-index:3;
+            pointer-events:none;
+            background-image:url('https://www.transparenttextures.com/patterns/noise.png');
+          "
+        ></div>
+
+        <!-- Slides -->
+        <div
+          id="aboutSlider"
+          class="relative w-full h-full"
+        >
+          <!-- Slide 1 -->
+          <div
+            class="about-slide active"
+            style="
+              position:absolute;
+              inset:0;
+              opacity:1;
+              transition:opacity 0.8s ease;
+            "
           >
-          <h1
-            class="hero-title font-heading font-bold text-charcoal leading-tight mt-3 mb-6"
-            style="font-size: 3.5rem"
+            <img
+              src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAGJktboAfwbGLOBWSxrFXPQeEJ1Pc3anKv2dkYDbs16CQ3yclvhMxWDmsfvIWsNeG2nSgU1O5hXb9ZowrhY0uR_SfzAsSm1Z32kHUp4i76GNkxuKrQTfORQc-LIXIKEYKXVAUEA34EjVrwk=s1360-w1360-h1020-rw"
+              alt="Pottery Studio"
+              loading="eager"
+              style="
+                width:100%;
+                height:100%;
+                object-fit:cover;
+                filter:saturate(0.92) contrast(1.03);
+              "
+            />
+
+            <div
+              style="
+                position:absolute;
+                inset:0;
+                background:
+                  linear-gradient(
+                    to top,
+                    rgba(0,0,0,0.25),
+                    rgba(0,0,0,0.04)
+                  );
+              "
+            ></div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div
+            class="about-slide"
+            style="
+              position:absolute;
+              inset:0;
+              opacity:0;
+              transition:opacity 0.8s ease;
+            "
           >
-            About <span class="text-gold font-heading">Clayo</span><br />Pottery
-            Studio
-          </h1>
-          <p class="text-muted text-lg leading-relaxed mb-4">
-            A sanctuary of clay and creativity, dedicated to awakening the
-            artist within every person. We believe handmade ceramics connect us
-            to something ancient, tactile and deeply human.
-          </p>
-          <p class="text-muted leading-relaxed mb-8">
-            Founded in 2017 by Priya Deshmukh, Clayo has grown into Amravati's
-            most beloved pottery studio — nurturing over 3,500 students from
-            first-time beginners to advanced ceramic artists.
-          </p>
-          <div class="flex gap-4 flex-wrap">
-            <a href="contact.html" class="btn-primary"
-              ><i class="fa-regular fa-calendar-check"></i>Book a Workshop</a
-            >
-            <a href="services.html" class="btn-outline">Our Workshops</a>
+            <img
+              src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAHJNU35qY3KrrpZlzCVbau_fqNdXj6p9kUAfyoKSRBmvhyikNs1IBo489S90GQqNnR6WEdtM8XMTH-Y6FWrOO9xiCfVG4RXcaQoebTnJkaTpBnVIVksi8IE3ULa-VrMu4FgsSuHh3TiE3U=s1360-w1360-h1020-rw"
+              alt="Clay Workshop"
+              style="
+                width:100%;
+                height:100%;
+                object-fit:cover;
+                filter:saturate(0.92) contrast(1.03);
+              "
+            />
+
+            <div
+              style="
+                position:absolute;
+                inset:0;
+                background:
+                  linear-gradient(
+                    to top,
+                    rgba(0,0,0,0.25),
+                    rgba(0,0,0,0.04)
+                  );
+              "
+            ></div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div
+            class="about-slide"
+            style="
+              position:absolute;
+              inset:0;
+              opacity:0;
+              transition:opacity 0.8s ease;
+            "
+          >
+            <img
+              src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAG99aSQ5ZuIpYIJEfs1ADjHKmLZZ3yhhH-RLYkITkgLS6sKZn6uNkw_1J1Q5t8bdl0gsC-Db0Rci8u8NVJCrkVznTd2g37tJiKOnMDhGAWOsNHbqy3Q5Jj4LXBSWkXJQfEZMG9q_-eICDZL=s1360-w1360-h1020-rw"
+              alt="Handmade Pottery"
+              style="
+                width:100%;
+                height:100%;
+                object-fit:cover;
+                filter:saturate(0.92) contrast(1.03);
+              "
+            />
+
+            <div
+              style="
+                position:absolute;
+                inset:0;
+                background:
+                  linear-gradient(
+                    to top,
+                    rgba(0,0,0,0.25),
+                    rgba(0,0,0,0.04)
+                  );
+              "
+            ></div>
           </div>
         </div>
-        <div class="reveal-right" style="transition-delay: 0.15s">
-          <div class="story-img shadow-2xl" style="height: 480px">
-            <img
-              src="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=900&q=85"
-              alt="Clayo Pottery Studio interior"
-              loading="eager"
-            />
+
+        <!-- Prev Button -->
+        <button
+          onclick="aboutPrevSlide()"
+          style="
+            position:absolute;
+            left:18px;
+            top:50%;
+            transform:translateY(-50%);
+            width:52px;
+            height:52px;
+            border-radius:50%;
+            
+            
+            
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            cursor:pointer;
+            z-index:15;
+  
+            transition:all 0.35s ease;
+          "
+        >
+          <i
+            class="fa-solid fa-chevron-left"
+            style="color:#7a6759;font-size:15px"
+          ></i>
+        </button>
+
+        <!-- Next Button -->
+        <button
+          onclick="aboutNextSlide()"
+          style="
+            position:absolute;
+            right:18px;
+            top:50%;
+            transform:translateY(-50%);
+            width:52px;
+            height:52px;
+            border-radius:50%;
+          
+          
+    
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            cursor:pointer;
+            z-index:15;
+    
+            transition:all 0.35s ease;
+          "
+        >
+          <i
+            class="fa-solid fa-chevron-right"
+            style="color:#7a6759;font-size:15px"
+          ></i>
+        </button>
+
+        <!-- Pagination -->
+        <div
+          class="absolute bottom-6 left-1/2 flex gap-3"
+          style="transform:translateX(-50%);z-index:15"
+        >
+          <button
+            class="about-dot active"
+            onclick="goToAboutSlide(0)"
+          ></button>
+
+          <button
+            class="about-dot"
+            onclick="goToAboutSlide(1)"
+          ></button>
+
+          <button
+            class="about-dot"
+            onclick="goToAboutSlide(2)"
+          ></button>
+        </div>
+      </div>
+
+      <!-- Floating Card -->
+      <div
+        class="absolute -bottom-5 -left-5 bg-white rounded-2xl px-5 py-4 shadow-xl border border-amber-100 hidden lg:flex items-center gap-3"
+        style="
+          z-index: 20;
+          background: rgba(255,255,255,0.72);
+          backdrop-filter: blur(20px);
+          border: 1px solid rgba(255,255,255,0.35);
+          box-shadow:
+            0 20px 60px rgba(0,0,0,0.08);
+        "
+      >
+        <div
+          class="w-10 h-10 rounded-xl flex items-center justify-center"
+          style="
+            background:linear-gradient(135deg,#c9a86a,#b8912a);
+          "
+        >
+          <i class="fa-solid fa-star text-white"></i>
+        </div>
+
+        <div>
+          <div class="text-xs text-muted font-medium">
+            Studio Rating
           </div>
+
           <div
-            class="absolute -bottom-5 -left-5 bg-white rounded-2xl px-5 py-4 shadow-xl border border-amber-100 hidden lg:flex items-center gap-3"
-            style="z-index: 10"
+            style="font-family:'Playfair Display',serif"
+            class="text-brown font-semibold text-lg"
           >
-            <div
-              class="w-10 h-10 bg-amber-50 rounded-xl flex items-center justify-center"
-            >
-              <i class="fa-solid fa-star text-gold"></i>
-            </div>
-            <div>
-              <div class="text-xs text-muted font-medium">Studio Rating</div>
-              <div
-                style="font-family: &quot;Playfair Display&quot;, serif"
-                class="text-brown font-semibold text-lg"
-              >
-                4.9 / 5.0
-              </div>
-            </div>
+            4.9 / 5.0
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+
+<style>
+  .about-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.5);
+    transition: all 0.35s ease;
+  }
+
+  .about-dot.active {
+    width: 30px;
+    background: #ffffff;
+  }
+</style>
+
+<script>
+  let aboutIndex = 0;
+
+  const aboutSlides =
+    document.querySelectorAll(".about-slide");
+
+  const aboutDots =
+    document.querySelectorAll(".about-dot");
+
+  function updateAboutSlider() {
+    aboutSlides.forEach((slide, index) => {
+      slide.style.opacity =
+        index === aboutIndex ? "1" : "0";
+    });
+
+    aboutDots.forEach((dot) =>
+      dot.classList.remove("active")
+    );
+
+    aboutDots[aboutIndex].classList.add("active");
+  }
+
+  function aboutNextSlide() {
+    aboutIndex = (aboutIndex + 1) % aboutSlides.length;
+    updateAboutSlider();
+  }
+
+  function aboutPrevSlide() {
+    aboutIndex =
+      (aboutIndex - 1 + aboutSlides.length) %
+      aboutSlides.length;
+
+    updateAboutSlider();
+  }
+
+  function goToAboutSlide(index) {
+    aboutIndex = index;
+    updateAboutSlider();
+  }
+
+  setInterval(() => {
+    aboutNextSlide();
+  }, 2000);
+</script>
 
     <!-- STATS BAND -->
     <section class="py-10 bg-brown">
       <div class="max-w-6xl mx-auto px-6">
         <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
           <div class="reveal">
-            <div class="stat-num mb-1" data-target="7">0</div>
+            <div class="stat-num mb-1" data-target="1">0</div>
             <div
               class="text-white/60 text-xs font-medium uppercase tracking-widest"
             >
@@ -838,7 +1142,7 @@
             </div>
           </div>
           <div class="reveal" style="transition-delay: 0.1s">
-            <div class="stat-num mb-1" data-target="3500">0</div>
+            <div class="stat-num mb-1" data-target="1000">0</div>
             <div
               class="text-white/60 text-xs font-medium uppercase tracking-widest"
             >
@@ -846,7 +1150,7 @@
             </div>
           </div>
           <div class="reveal" style="transition-delay: 0.2s">
-            <div class="stat-num mb-1" data-target="15">0</div>
+            <div class="stat-num mb-1" data-target="10">0</div>
             <div
               class="text-white/60 text-xs font-medium uppercase tracking-widest"
             >
@@ -854,7 +1158,7 @@
             </div>
           </div>
           <div class="reveal" style="transition-delay: 0.3s">
-            <div class="stat-num mb-1" data-target="98">0</div>
+            <div class="stat-num mb-1" data-target="95">0</div>
             <div
               class="text-white/60 text-xs font-medium uppercase tracking-widest"
             >
@@ -872,7 +1176,7 @@
           <div class="reveal-left">
             <div class="relative story-img shadow-xl" style="height: 520px">
               <img
-                src="https://images.unsplash.com/photo-1606722590583-6951b5ea92ad?w=900&q=85"
+                src="https://lh3.googleusercontent.com/p/AF1QipORz5d_Wk17UiOJjMgt7JkBIXMlo-x5KcL_0neF=s1360-w1360-h1020-rw"
                 alt="Priya's pottery journey"
                 loading="lazy"
               />
@@ -885,7 +1189,7 @@
                 style="font-family: &quot;Playfair Display&quot;, serif"
                 class="text-4xl font-bold text-gold"
               >
-                2017
+                2025
               </div>
               <div class="text-xs text-white/70 mt-1">Year Founded</div>
             </div>
@@ -896,7 +1200,7 @@
               class="section-h2 font-heading font-bold text-charcoal mt-3 mb-6 leading-tight"
               style="font-size: 2.5rem"
             >
-              7 Years of
+              1 Years of
               <span class="text-gold font-heading">Shaping</span> Clay &
               Community
             </h2>
@@ -1758,104 +2062,405 @@
     </section>
 
     <!-- WHY CHOOSE US -->
-    <section class="py-24 bg-white">
-      <div class="max-w-6xl mx-auto px-6">
-        <div class="grid lg:grid-cols-2 gap-16 items-center">
-          <div class="reveal-left">
-            <span class="section-tag">Why Clayo</span>
-            <h2
-              class="font-heading font-bold text-charcoal mt-3 mb-6 leading-tight section-h2"
-              style="font-size: 2.5rem"
+<section class="py-24 bg-white overflow-hidden">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+      
+      <!-- LEFT CONTENT -->
+      <div class="reveal-left">
+        <span class="section-tag">Why Clayo</span>
+
+        <h2
+          class="font-heading font-bold text-charcoal mt-3 mb-6 leading-tight section-h2"
+          style="font-size: 2.5rem"
+        >
+          What Makes Us
+          <span class="text-gold font-heading">Different</span>
+        </h2>
+
+        <div class="flex flex-col gap-5">
+          <!-- Card 1 -->
+          <div
+            class="flex items-start gap-4 p-5 bg-cream rounded-2xl border border-amber-100 card-hover"
+          >
+            <div
+              class="w-11 h-11 bg-amber-50 rounded-xl flex items-center justify-center flex-shrink-0"
             >
-              What Makes Us
-              <span class="text-gold font-heading">Different</span>
-            </h2>
-            <div class="flex flex-col gap-5">
-              <div
-                class="flex items-start gap-4 p-5 bg-cream rounded-2xl border border-amber-100 card-hover"
+              <i class="fa-solid fa-users text-gold text-lg"></i>
+            </div>
+
+            <div>
+              <h4
+                class="font-heading text-base font-semibold text-brown mb-1"
               >
-                <div
-                  class="w-11 h-11 bg-amber-50 rounded-xl flex items-center justify-center flex-shrink-0"
-                >
-                  <i class="fa-solid fa-users text-gold text-lg"></i>
-                </div>
-                <div>
-                  <h4
-                    class="font-heading text-base font-semibold text-brown mb-1"
-                  >
-                    Intimate Small-Batch Classes
-                  </h4>
-                  <p class="text-sm text-muted leading-relaxed">
-                    Maximum 8 students per class — you get real hands-on
-                    guidance, not just a demo watched from the back. Every
-                    student matters.
-                  </p>
-                </div>
-              </div>
-              <div
-                class="flex items-start gap-4 p-5 bg-cream rounded-2xl border border-amber-100 card-hover"
-              >
-                <div
-                  class="w-11 h-11 bg-amber-50 rounded-xl flex items-center justify-center flex-shrink-0"
-                >
-                  <i
-                    class="fa-solid fa-fire-flame-curved text-gold text-lg"
-                  ></i>
-                </div>
-                <div>
-                  <h4
-                    class="font-heading text-base font-semibold text-brown mb-1"
-                  >
-                    Full Kiln Firing Included
-                  </h4>
-                  <p class="text-sm text-muted leading-relaxed">
-                    Your workshop fee includes bisque firing and glaze firing.
-                    Collect a truly finished, food-safe ceramic piece — not just
-                    a raw clay form.
-                  </p>
-                </div>
-              </div>
-              <div
-                class="flex items-start gap-4 p-5 bg-cream rounded-2xl border border-amber-100 card-hover"
-              >
-                <div
-                  class="w-11 h-11 bg-blue-50 rounded-xl flex items-center justify-center flex-shrink-0"
-                >
-                  <i class="fa-solid fa-clock text-blue-500 text-lg"></i>
-                </div>
-                <div>
-                  <h4
-                    class="font-heading text-base font-semibold text-brown mb-1"
-                  >
-                    Flexible Scheduling
-                  </h4>
-                  <p class="text-sm text-muted leading-relaxed">
-                    Weekday, weekend and evening sessions available. Book as a
-                    drop-in or enrol in our 4-week and 8-week courses at your
-                    own pace.
-                  </p>
-                </div>
-              </div>
+                Intimate Small-Batch Classes
+              </h4>
+
+              <p class="text-sm text-muted leading-relaxed">
+                Maximum 8 students per class — you get real hands-on guidance,
+                not just a demo watched from the back.
+              </p>
             </div>
           </div>
-          <div class="reveal-right" style="transition-delay: 0.15s">
-            <div class="story-img shadow-xl" style="height: 500px">
-              <img
-                src="https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?w=900&q=85"
-                alt="Studio pottery in progress"
-                loading="lazy"
-              />
+
+          <!-- Card 2 -->
+          <div
+            class="flex items-start gap-4 p-5 bg-cream rounded-2xl border border-amber-100 card-hover"
+          >
+            <div
+              class="w-11 h-11 bg-amber-50 rounded-xl flex items-center justify-center flex-shrink-0"
+            >
+              <i
+                class="fa-solid fa-fire-flame-curved text-gold text-lg"
+              ></i>
+            </div>
+
+            <div>
+              <h4
+                class="font-heading text-base font-semibold text-brown mb-1"
+              >
+                Full Kiln Firing Included
+              </h4>
+
+              <p class="text-sm text-muted leading-relaxed">
+                Your workshop fee includes bisque firing and glaze firing for
+                beautifully finished ceramics.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="flex items-start gap-4 p-5 bg-cream rounded-2xl border border-amber-100 card-hover"
+          >
+            <div
+              class="w-11 h-11 bg-blue-50 rounded-xl flex items-center justify-center flex-shrink-0"
+            >
+              <i class="fa-solid fa-clock text-blue-500 text-lg"></i>
+            </div>
+
+            <div>
+              <h4
+                class="font-heading text-base font-semibold text-brown mb-1"
+              >
+                Flexible Scheduling
+              </h4>
+
+              <p class="text-sm text-muted leading-relaxed">
+                Weekday, weekend and evening sessions available for every kind
+                of learner and creator.
+              </p>
             </div>
           </div>
         </div>
       </div>
-    </section>
+
+      <!-- RIGHT IMAGE SLIDER -->
+      <div
+        class="reveal-right relative"
+        style="transition-delay: 0.15s"
+      >
+        <!-- Soft Glow -->
+        <div
+          style="
+            position:absolute;
+            width:320px;
+            height:320px;
+            background:#d8c2a8;
+            filter:blur(120px);
+            opacity:0.18;
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-50%);
+            z-index:-1;
+          "
+        ></div>
+
+        <!-- Slider Wrapper -->
+        <div
+          class="relative overflow-hidden shadow-xl"
+          style="
+            height: 500px;
+            border-radius: 32px;
+            transform: rotate(-2deg);
+            box-shadow:
+              0 40px 100px rgba(0,0,0,0.12),
+              0 10px 40px rgba(184,145,42,0.08);
+          "
+        >
+          <!-- Grain Texture -->
+          <div
+            style="
+              position:absolute;
+              inset:0;
+              opacity:0.04;
+              z-index:3;
+              pointer-events:none;
+              background-image:url('https://www.transparenttextures.com/patterns/noise.png');
+            "
+          ></div>
+
+          <!-- Slides -->
+          <div
+            id="whySlider"
+            class="relative w-full h-full"
+          >
+            <!-- Slide 1 -->
+            <div
+              class="why-slide active"
+              style="
+                position:absolute;
+                inset:0;
+                opacity:1;
+                transition:opacity 0.8s ease;
+              "
+            >
+              <img
+                src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAGJktboAfwbGLOBWSxrFXPQeEJ1Pc3anKv2dkYDbs16CQ3yclvhMxWDmsfvIWsNeG2nSgU1O5hXb9ZowrhY0uR_SfzAsSm1Z32kHUp4i76GNkxuKrQTfORQc-LIXIKEYKXVAUEA34EjVrwk=s1360-w1360-h1020-rw"
+                alt="Studio pottery"
+                loading="lazy"
+                style="
+                  width:100%;
+                  height:100%;
+                  object-fit:cover;
+                  filter:saturate(0.92) contrast(1.03);
+                "
+              />
+
+              <div
+                style="
+                  position:absolute;
+                  inset:0;
+                  background:
+                    linear-gradient(
+                      to top,
+                      rgba(0,0,0,0.28),
+                      rgba(0,0,0,0.04)
+                    );
+                "
+              ></div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div
+              class="why-slide"
+              style="
+                position:absolute;
+                inset:0;
+                opacity:0;
+                transition:opacity 0.8s ease;
+              "
+            >
+              <img
+                src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAEuCdpowxDHI6m0z3APLXdCgnBlJZ8yQ-FEpLmm6J7G6lFytOV77WN3gGTLYA-6TVQloMusbl8USNj75J7FpCaUlekV5tY6kPE5RyXJ28UsBELoVZ5PpDcFQeEzv66vHuRtPWvHgIjrTRip=s1360-w1360-h1020-rw"
+                alt="Clay workshop"
+                style="
+                  width:100%;
+                  height:100%;
+                  object-fit:cover;
+                  filter:saturate(0.92) contrast(1.03);
+                "
+              />
+
+              <div
+                style="
+                  position:absolute;
+                  inset:0;
+                  background:
+                    linear-gradient(
+                      to top,
+                      rgba(0,0,0,0.28),
+                      rgba(0,0,0,0.04)
+                    );
+                "
+              ></div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div
+              class="why-slide"
+              style="
+                position:absolute;
+                inset:0;
+                opacity:0;
+                transition:opacity 0.8s ease;
+              "
+            >
+              <img
+                src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAGnUSqxWRraUx35X9fFTndUlcLMaLlh4g3ntZBGa4xtZir2FAdU6gSyICNYZtxVdalLMp8aYf96cEGzrzzEm3Ahg4rdIPt1oudnP72kofPhOlMv3kT3aS_nJ6lnnTlSi-Ui3qhLmzH4HS3r=s1360-w1360-h1020-rw""
+                alt="Pottery artist"
+                style="
+                  width:100%;
+                  height:100%;
+                  object-fit:cover;
+                  filter:saturate(0.92) contrast(1.03);
+                "
+              />
+
+              <div
+                style="
+                  position:absolute;
+                  inset:0;
+                  background:
+                    linear-gradient(
+                      to top,
+                      rgba(0,0,0,0.28),
+                      rgba(0,0,0,0.04)
+                    );
+                "
+              ></div>
+            </div>
+          </div>
+
+          <!-- Prev -->
+          <button
+            onclick="whyPrevSlide()"
+            style="
+              position:absolute;
+              left:18px;
+              top:50%;
+              transform:translateY(-50%);
+              width:52px;
+              height:52px;
+              border-radius:50%;
+              background:rgba(255,255,255,0.72);
+              backdrop-filter:blur(20px);
+              border:1px solid rgba(255,255,255,0.35);
+              display:flex;
+              align-items:center;
+              justify-content:center;
+              cursor:pointer;
+              z-index:15;
+              box-shadow:
+                0 10px 40px rgba(0,0,0,0.08);
+            "
+          >
+            <i
+              class="fa-solid fa-chevron-left"
+              style="color:#7a6759;font-size:15px"
+            ></i>
+          </button>
+
+          <!-- Next -->
+          <button
+            onclick="whyNextSlide()"
+            style="
+              position:absolute;
+              right:18px;
+              top:50%;
+              transform:translateY(-50%);
+              width:52px;
+              height:52px;
+              border-radius:50%;
+              background:rgba(255,255,255,0.72);
+              backdrop-filter:blur(20px);
+              border:1px solid rgba(255,255,255,0.35);
+              display:flex;
+              align-items:center;
+              justify-content:center;
+              cursor:pointer;
+              z-index:15;
+              box-shadow:
+                0 10px 40px rgba(0,0,0,0.08);
+            "
+          >
+            <i
+              class="fa-solid fa-chevron-right"
+              style="color:#7a6759;font-size:15px"
+            ></i>
+          </button>
+
+          <!-- Pagination -->
+          <div
+            class="absolute bottom-6 left-1/2 flex gap-3"
+            style="transform:translateX(-50%);z-index:15"
+          >
+            <button
+              class="why-dot active"
+              onclick="goToWhySlide(0)"
+            ></button>
+
+            <button
+              class="why-dot"
+              onclick="goToWhySlide(1)"
+            ></button>
+
+            <button
+              class="why-dot"
+              onclick="goToWhySlide(2)"
+            ></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .why-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.5);
+    transition: all 0.35s ease;
+  }
+
+  .why-dot.active {
+    width: 30px;
+    background: #ffffff;
+  }
+</style>
+
+<script>
+  let whyIndex = 0;
+
+  const whySlides =
+    document.querySelectorAll(".why-slide");
+
+  const whyDots =
+    document.querySelectorAll(".why-dot");
+
+  function updateWhySlider() {
+    whySlides.forEach((slide, index) => {
+      slide.style.opacity =
+        index === whyIndex ? "1" : "0";
+    });
+
+    whyDots.forEach((dot) =>
+      dot.classList.remove("active")
+    );
+
+    whyDots[whyIndex].classList.add("active");
+  }
+
+  function whyNextSlide() {
+    whyIndex = (whyIndex + 1) % whySlides.length;
+    updateWhySlider();
+  }
+
+  function whyPrevSlide() {
+    whyIndex =
+      (whyIndex - 1 + whySlides.length) %
+      whySlides.length;
+
+    updateWhySlider();
+  }
+
+  function goToWhySlide(index) {
+    whyIndex = index;
+    updateWhySlider();
+  }
+
+  setInterval(() => {
+    whyNextSlide();
+  }, 2000);
+</script>
 
     <!-- TESTIMONIALS STRIP -->
     <section class="py-16 bg-brown overflow-hidden">
       <div class="max-w-6xl mx-auto px-6 text-center reveal">
         <p class="font-heading text-2xl text-white mb-2">
-          Trusted by <span class="text-gold">3,500+</span> happy potters across
+          Trusted by <span class="text-gold">1000+</span> happy potters across
           Amravati & Vidarbha
         </p>
         <p class="text-white/60 text-sm mt-2">
